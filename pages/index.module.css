@@ -1,7 +1,7 @@
 .home-page {
   min-height: 100vh;
   width: 100vw;
-  background: #F9F9F9;
+  background: #f9f9f9;
 }
 .header {
   padding: 46px 215px;
@@ -42,44 +42,45 @@
   padding: 18px 0;
   margin-bottom: 48px;
 }
-.breadcrumb__wrapper{
+.breadcrumb__wrapper {
   max-width: 1135px;
   margin: auto;
 }
-.form{
-    max-width: 1135px;
-    margin: auto;
-    padding: 40px 38px 52px 38px;
-    background: #fff;
-    margin-bottom: 59px;
+.form {
+  max-width: 1135px;
+  margin: auto;
+  padding: 40px 38px 52px 38px;
+  background: #fff;
+  margin-bottom: 59px;
 }
-.form__title{
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    color: var(--primary-color);
-    margin-bottom: 14px;
+.form__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--primary-color);
+  margin-bottom: 14px;
 }
-.hr__devider{
-    max-width: 1059px;
-    border: 1px solid #000000;
-    margin-top: 82px;
-    margin-bottom: 48px;
+.hr__devider {
+  max-width: 1059px;
+  border: 1px solid #000000;
+  margin-top: 82px;
+  margin-bottom: 48px;
 }
 
-.form__row1,.form__row3{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 340px);
-    justify-content: space-between;
-    grid-row-gap: 17px;
+.form__row1,
+.form__row3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 340px);
+  justify-content: space-between;
+  grid-row-gap: 17px;
 }
-.form__row2{
-    display: grid;
-    grid-template-columns: 111px 570px 340px;
-    justify-content: space-between;
-    margin-bottom: 17px;
+.form__row2 {
+  display: grid;
+  grid-template-columns: 111px 570px 340px;
+  justify-content: space-between;
+  margin-bottom: 17px;
 }
-.submit-btn{
+.submit-btn {
   display: block;
   min-width: 155px;
   margin: auto;
@@ -88,13 +89,47 @@
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  background: #75E6DA;
-  border: 1px solid #05445E;
+  background: #75e6da;
+  border: 1px solid #05445e;
   padding: 12px 44px;
   border-radius: 7px;
 }
 
-.footer{
+.footer {
   padding: 17px;
   text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .breadcrumb{
+    text-align: center;
+  }
+  .form__title{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .form__row1,
+  .form__row2,
+  .form__row3 {
+    grid-template-columns: repeat(auto-fill, 380px);
+    justify-content: center;
+    grid-column-gap: 59px;
+    grid-row-gap: 17px;
+  }
+  .form__row2{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .form{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .form__row1,
+  .form__row2,
+  .form__row3 {
+    display: flex;
+    flex-direction: column;
+  }
 }
