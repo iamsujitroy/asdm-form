@@ -1,0 +1,15 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  grid-gap: 3px;
+}
+.input{
+    padding: 11px 16px;
+    border-radius: 0;
+    border: 1px solid #05445E;
+}

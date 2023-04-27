@@ -1,0 +1,41 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  grid-gap: 3px;
+}
+.input{
+    padding: 11px 16px;
+    border-radius: 0;
+    border: 1px solid #05445E;
+}
+
+.label input[type=number]::-webkit-inner-spin-button, 
+.label input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+/* For Safari */
+.label input[type=number]::-webkit-inner-spin-button,
+.label input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+.label input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.label input[type=number]::-moz-number-spin-box {
+  -moz-appearance: none;
+}
+
+.label input[type=number]:hover::-webkit-inner-spin-button,
+.label input[type=number]:hover::-webkit-outer-spin-button {
+  background-color: #f2f2f2;
+}

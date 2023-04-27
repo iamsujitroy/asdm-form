@@ -1,0 +1,16 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  grid-gap: 3px;
+}
+.select {
+  border-radius: 0;
+  border: 1px solid #05445E;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 11px 16px;
+}
