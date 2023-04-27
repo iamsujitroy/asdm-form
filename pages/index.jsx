@@ -1,11 +1,11 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "./index.module.css";
-import Logo from "@/assets/svg/Logo.png";
 import InputText from "@/components/Form/InputText/InputText";
 import InputNumber from "@/components/Form/InputNumber/InputNumber";
 import SelectField from "@/components/Form/SelectField/SelectField";
 import DateSelect from "@/components/Form/DateSelect/DateSelect";
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
 
 export default function Home() {
   return (
@@ -20,19 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles["home-page"]}>
-        <header className={styles.header}>
-          <div className={styles.header__logo}>
-            <Image src={Logo} />
-          </div>
-          <div className={styles.header__info}>
-            <div className={styles.header__info__title}>
-              ASSAM SKILL DEVELOPEMENT MISSION
-            </div>
-            <div className={styles.header__info__subtitle}>
-              Goverment of Assam
-            </div>
-          </div>
-        </header>
+        <Header />
         <div className={styles.breadcrumb}>
           <div className={styles.breadcrumb__wrapper}>
             Skill Yatra Registration
@@ -81,9 +69,7 @@ export default function Home() {
             Submit
           </button>
         </form>
-        <footer className={styles.footer}>
-          2023 &copy; ASDM | All Rights Reserved.
-        </footer>
+        <Footer />
       </main>
     </>
   );
