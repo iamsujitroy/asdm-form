@@ -1,0 +1,62 @@
+.dashboard {
+  width: 100%;
+  background: #f9f9f9;
+}
+.dashboard__wrapper {
+  max-width: var(--max-width);
+  margin: auto;
+  padding-bottom: 50px;
+}
+.dashboard__infor {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.dashboard__infor__pichart {
+  width: 362px;
+  box-shadow: 0 0 8px #99999980;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+.dashboard__infor__barchart {
+  width: 707px;
+  height: 362px;
+  box-shadow: 0 0 8px #99999980;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+.dashboard__status {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  justify-content: space-between;
+  margin-bottom: 50px;
+  grid-row-gap: 26px;
+}
+.dashboard__status__card {
+  text-align: center;
+  background: #fff;
+  padding: 24px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px #99999980;
+}
+.dashboard__status__card h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.dashboard__table {
+  width: 100%;
+}
+.dashboard__table thead{
+  font-weight: bold;
+  padding: 16px 32px;
+}
+.dashboard__table td{
+    padding: 16px 32px;
+    border: 1px solid black;
+    background: white;
+}

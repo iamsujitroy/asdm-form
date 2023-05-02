@@ -1,0 +1,28 @@
+.landing {
+  background: #f9f9f9;
+}
+.landing__wrapper {
+  max-width: var(--max-width);
+  margin: auto;
+}
+.landing__wrapper h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+.landing__options__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 340px);
+  justify-content: center;
+  padding-bottom: 40px;
+  grid-gap: 25px;
+}
+.landing__options__container__option {
+  font-size: 24px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 40px 30px;
+  text-align: center;
+  color: #000;
+  box-shadow: 0 0 8px #99999980;
+}
